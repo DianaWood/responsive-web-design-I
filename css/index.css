@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-around;
 	padding: 25px;
 	width: 100%; 
-	align-items: center;
+    align-items: center;
+    color: black;
 }
 
 .sidebyside {
@@ -102,9 +103,15 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 80px;
 }
 
-.anchors a {
-	color: gray;
-	text-decoration: none;
+.anchors div {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anchors div a {
+    color: black;
 }
 
 .notessidebyside  {
