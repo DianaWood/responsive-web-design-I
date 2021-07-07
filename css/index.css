@@ -1,3 +1,244 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.anchors {
+	display: flex;
+	justify-content: space-around;
+	padding: 25px;
+	width: 100%; 
+    align-items: center;
+    color: black;
+}
+
+.sidebyside {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+    color: black;
+}
+
+.sidebyside h1 {
+	font-size: 60px;
+}
+
+.sidebyside p {
+	border: 1px solid black;
+	font-size: 20px;
+	color: black;
+	padding: 5px;
+	width: 200px;
+	text-align: center;
+	
+}
+.container {
+	display:flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-bottom: 2px solid black;
+	padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.anchors div {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anchors div a {
+    color: black;
+}
+
+.notessidebyside  {
+	color: black;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 50px;
+	padding-bottom:50px;	
+}
+
+.notessidebyside div {
+	padding: 25px;
+}
+
+.middleimage {
+	display:flex;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+.bottomtexts {
+	display:flex; 
+	justify-content: center;
+}
+
+
+.bottomtexts div {
+	padding: 20px;
+}
+
+.copy {
+	text-align: center;
+}
+
+.spacebetween2 * {
+	padding:10px;
+}
+
+.all {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 800px){
+    body{
+        background-color: plum;
+    }
+
+    .anchors {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+@media (max-width: 500px){
+    body{
+        background-color: yellowgreen;
+    }
+    .all {
+        width: 90%;
+    }
+    .anchors {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 15px;
+        
+        }
+
+    .anchors div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .anchors div a {
+        border-bottom: solid grey;
+        padding: 30px;
+        width: 100%;
+        margin: 15px;
+        text-align: center;
+
+    }
+    .sidebyside  {
+        display: flex;	
+        align-items: center;
+        width: 50px;
+	}
+    .hide {
+        display: none;
+    }
+    .notessidebyside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notessidebyside div {
+        padding-top: 30px;
+    }
+
+    .bottomtexts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;  
+    }
+    .middleimage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+}
+
+
 
 
